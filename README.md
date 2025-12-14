@@ -53,6 +53,10 @@ CREATE TABLE retail_sales
 ```sql
 SELECT COUNT(*) FROM retail_sales;
 
+SELECT COUNT(DISTINCT customer_id ) AS total_customers FROM retail_sales;
+
+SELECT DISTINCT category  FROM retail_sales;
+
 SELECT * FROM retail_sales
 WHERE 
 	transactions_id IS NULL
